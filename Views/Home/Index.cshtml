@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Calculadora";
+}
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@*<form action="/home/ImprimeFrase" method="post">
+        <label for="fname">Nome:</label>
+        <input type="text" id="nome" name="nome" /><br /><br />
+        <label for="lname">Idade:</label>
+        <input type="text" id="idade" name="idade"><br /><br />
+        <input type="submit" value="Enviar" />
+    </form>*@
+
+<br />
+
+<h2>Calculadora</h2>
+<label for="fname">Valor um:</label>
+<input type="text" id="valorum" name="nome" />
+<br />
+<br />
+
+<label for="lname">Valor dois:</label>
+<input type="text" id="valordois" name="idade" />
+<br />
+<br />
+
+<label for="resultado">Resultado:</label>
+<input value="" type="text" id="resultado" />
+<br />
+
+<input value="Somar" type="submit" onclick="somar()" />
+<input value="Subtrair" type="submit" onclick="subtrair()" />
+<input value="Multiplicar" type="submit" onclick="multiplicar()" />
+<input value="Dividir" type="submit" onclick="dividir()" />
+
+
