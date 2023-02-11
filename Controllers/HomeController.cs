@@ -34,6 +34,7 @@ namespace ProjetoMVC.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        //VERIFICAR SE ESTÁ SENDO USADO
         [HttpPost]
         public IActionResult ImprimeFrase(FraseModel model)
         {
@@ -48,6 +49,32 @@ namespace ProjetoMVC.Controllers
             return Ok(model);
         }
 
-       
+        [HttpPost]
+        public IActionResult Subtrair([FromBody] ValoresModel model)
+        {
+            model.Resultado = model.ValorUm - model.ValorDois;
+            return Ok(model);
+        }
+
+        [HttpPost]
+        public IActionResult Dividir([FromBody] ValoresModel model)
+        {
+            model.Resultado = (model.ValorUm / model.ValorDois);
+            return Ok(model);
+        }
+
+        [HttpPost]
+        public IActionResult Multiplicar([FromBody] ValoresModel model)
+        {
+            model.Resultado = model.ValorUm * model.ValorDois;
+            return Ok(model);
+        }
+
+        [HttpGet]
+        public IActionResult Limpar([FromForm] ValoresModel model)
+        {
+            ModelState.Clear();
+            return Ok(model);
+        }
     }
 }
