@@ -34,13 +34,6 @@ namespace ProjetoMVC.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        //VERIFICAR SE ESTÁ SENDO USADO
-        [HttpPost]
-        public IActionResult ImprimeFrase(FraseModel model)
-        {
-            //Gravar no banco de dados
-            return View(model);
-        }
 
         [HttpPost]
         public IActionResult Somar([FromBody] ValoresModel model)

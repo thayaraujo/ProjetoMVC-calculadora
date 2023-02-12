@@ -1,7 +1,4 @@
 ﻿function somar() {
-    //var resultado = document.getElementById('resultado');
-    //var valorUm = document.getElementById('valorUm');
-    //var valorDois = document.getElementById('valorDois');
     let resultado = document.querySelector("#resultado");
     let valorUm = document.querySelector("#valorum");
     let valorDois = document.querySelector("#valordois");
@@ -139,7 +136,7 @@ function limpar() {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        //body: JSON.stringify(item)
+
     })
         .then(function (response) {
             return response.json();
