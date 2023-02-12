@@ -1,32 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Calculadora";
+    ViewData["Title"] = "Calculadora MVC";
 }
 
 <script src="~/js/site.js" asp-append-version="true"></script>
 
 
 <br />
+<h2>Projeto Calculadora MVC</h2>
+<p>Esse projeto foi proposto no curso de .NET e C# ConstruDelas, da WomakersCode, para aplicar e praticar os conhecimentos de construção de projetos MVC .</p>
+<p>Iniciei a primeira versão dessa calculadora em aula, e alguns meses depois retomei o projeto para estudo,
+    concluindo a primeira versão. Ela é simples e realiza as operações de soma, subtração, divisão e multiplicação, além de ter um
+    botão para limpar os valores da calculadora. Inicialmente não foram feitas validações dos valores inseridos na calculadora,
+    assim, se o usuário inserir uma letra ao invés de um número, por exemplo, simplesmente não conseguirá realizar a operação desejada, mas também
+    não receberá um erro.</p>
+<p>Após concluir essa versão, decidi continuar praticando e comecei a criar a segunda versão da calculadora, com o intuito de 
+    aprimorar o código e o funcionamento da calculadora. Pretendo adicionar validações e realizar o tratamento de erros de maneira adequada,
+    além de melhorar o design da calculadora.</p>
 
-<h2>Calculadora</h2>
-<label for="fname">Valor um:</label>
-<input type="text" id="valorum" name="primeiro" />
-<br />
-<br />
 
-<label for="lname">Valor dois:</label>
-<input type="text" id="valordois" name="segundo" />
-<br />
-<br />
-
-<label for="resultado">Resultado:</label>
-<input value="" type="text" id="resultado" />
-<br />
-
-<input value="Somar" type="submit" onclick="somar()" />
-<input value="Subtrair" type="submit" onclick="subtrair()" />
-<input value="Multiplicar" type="submit" onclick="multiplicar()" />
-<input value="Dividir" type="submit" onclick="dividir()" />
-<input value="Limpar valores" type="reset" onclick="limpar()" />
 
 
 

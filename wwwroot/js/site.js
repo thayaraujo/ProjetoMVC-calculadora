@@ -9,7 +9,7 @@
         resultado: parseInt(resultado.value)
     };
 
-    fetch('/home/somar', {
+    fetch('/primeiraversao/somar', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -39,7 +39,7 @@ function subtrair() {
         resultado: parseInt(resultado.value)
     };
 
-    fetch('/home/subtrair', {
+    fetch('/primeiraversao/subtrair', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -69,7 +69,7 @@ function dividir() {
         resultado: parseInt(resultado.value)
     };
 
-    fetch('/home/dividir', {
+    fetch('/primeiraversao/dividir', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -99,7 +99,7 @@ function multiplicar() {
         resultado: parseInt(resultado.value)
     };
 
-    fetch('/home/multiplicar', {
+    fetch('/primeiraversao/multiplicar', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -130,7 +130,7 @@ function limpar() {
         resultado: parseInt(resultado.value)
     };
 
-    fetch('/home/limpar', {
+    fetch('/primeiraversao/limpar', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',

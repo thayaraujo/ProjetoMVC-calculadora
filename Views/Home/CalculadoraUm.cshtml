@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Calculadora - Primeira versão";
+}
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+
+<br />
+
+<h2>Calculadora - Primeira Versão</h2>
+<label for="fname">Valor um:</label>
+<input type="text" id="valorum" name="primeiro" />
+<br />
+<br />
+
+<label for="lname">Valor dois:</label>
+<input type="text" id="valordois" name="segundo" />
+<br />
+<br />
+
+<label for="resultado">Resultado:</label>
+<input value="" type="text" id="resultado" />
+<br />
+
+<input value="Somar" type="submit" onclick="somar()" />
+<input value="Subtrair" type="submit" onclick="subtrair()" />
+<input value="Multiplicar" type="submit" onclick="multiplicar()" />
+<input value="Dividir" type="submit" onclick="dividir()" />
+<input value="Limpar valores" type="reset" onclick="limpar()" />
+
+
+

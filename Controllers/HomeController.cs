@@ -28,6 +28,16 @@ namespace ProjetoMVC.Controllers
             return View();
         }
 
+        public IActionResult CalculadoraUm()
+        {
+            return View();
+        }
+
+        public IActionResult CalculadoraDois()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -35,39 +45,39 @@ namespace ProjetoMVC.Controllers
         }
 
 
-        [HttpPost]
-        public IActionResult Somar([FromBody] ValoresModel model)
-        {
-            model.Resultado = model.ValorUm + model.ValorDois;
-            return Ok(model);
-        }
+        //[HttpPost]
+        //public IActionResult Somar([FromBody] ValoresModel model)
+        //{
+        //    model.Resultado = model.ValorUm + model.ValorDois;
+        //    return Ok(model);
+        //}
 
-        [HttpPost]
-        public IActionResult Subtrair([FromBody] ValoresModel model)
-        {
-            model.Resultado = model.ValorUm - model.ValorDois;
-            return Ok(model);
-        }
+        //[HttpPost]
+        //public IActionResult Subtrair([FromBody] ValoresModel model)
+        //{
+        //    model.Resultado = model.ValorUm - model.ValorDois;
+        //    return Ok(model);
+        //}
 
-        [HttpPost]
-        public IActionResult Dividir([FromBody] ValoresModel model)
-        {
-            model.Resultado = (model.ValorUm / model.ValorDois);
-            return Ok(model);
-        }
+        //[HttpPost]
+        //public IActionResult Dividir([FromBody] ValoresModel model)
+        //{
+        //    model.Resultado = (model.ValorUm / model.ValorDois);
+        //    return Ok(model);
+        //}
 
-        [HttpPost]
-        public IActionResult Multiplicar([FromBody] ValoresModel model)
-        {
-            model.Resultado = model.ValorUm * model.ValorDois;
-            return Ok(model);
-        }
+        //[HttpPost]
+        //public IActionResult Multiplicar([FromBody] ValoresModel model)
+        //{
+        //    model.Resultado = model.ValorUm * model.ValorDois;
+        //    return Ok(model);
+        //}
 
-        [HttpGet]
-        public IActionResult Limpar([FromForm] ValoresModel model)
-        {
-            ModelState.Clear();
-            return Ok(model);
-        }
+        //[HttpGet]
+        //public IActionResult Limpar([FromForm] ValoresModel model)
+        //{
+        //    ModelState.Clear();
+        //    return Ok(model);
+        //}
     }
 }
