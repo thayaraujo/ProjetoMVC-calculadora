@@ -1,11 +1,84 @@
-﻿@{
-    ViewData["Title"] = "Calculadora - Segunda versão";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*<title>@ViewData["Title"] = "Calculadora - Segunda versão";</title>*@
+    @{
+        ViewData["Title"] = "Calculadora - Segunda versão";
+    }
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/calculadoraDois.css" />
+</head>
+<body>
+    <div class="fundo">
+        <h1 id="titulo">Calculadora - Segunda Versão</h1>
+        <p>Em construção</p>
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <p id="resultado">000</p>
+
+            <table>
+                <tr>
+                    <td><button class="botao">C</button></td>
+                    <td><button class="botao"><</button></td>
+                    <td><button class="botao">/</button></td>
+                    <td><button class="botao">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao">8</button></td>
+                    <td><button class="botao">9</button></td>
+                    <td><button class="botao">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">4</button></td>
+                    <td><button class="botao">5</button></td>
+                    <td><button class="botao">6</button></td>
+                    <td><button class="botao">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">1</button></td>
+                    <td><button class="botao">2</button></td>
+                    <td><button class="botao">3</button></td>
+                    <td rowspan="2"><button class="botao" id="igual">=</button></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" id="zero">0</button></td>
+                    <td><button class="botao">.</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+            
+
+        </nav>
+    </header>
+
+
+</body>
+</html>
+
+
+
+
+
+
+@*@{
+        ViewData["Title"] = "Calculadora - Segunda versão";
+    }*@
 
 @*<script src="~/js/site.js" asp-append-version="true"></script>*@
 
+<link rel="stylesheet" href="~/css/calculadoraDois.css" />
 
 <br />
 
-<h2>Calculadora - Primeira Versão</h2>
-<p>Em construção</p>
+
+
