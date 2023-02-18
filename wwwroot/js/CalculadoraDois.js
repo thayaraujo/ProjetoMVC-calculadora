@@ -18,6 +18,6 @@ function calcular() {
         document.getElementById('resultado').innerHTML = eval(resultado);
     }
     else {
-        document.getElementById('resultado').innerHTML = "Insira os números para calcular";
+        document.getElementById('resultado').innerHTML = "Insira os números";
     }
 }

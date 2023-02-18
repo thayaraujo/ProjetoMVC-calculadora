@@ -1,32 +1,52 @@
-﻿@{
-    ViewData["Title"] = "Calculadora - Primeira versão";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<script src="~/js/site.js" asp-append-version="true"></script>
+    @{
+        ViewData["Title"] = "Calculadora - Primeira versão";
+    }
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/css/calculadoraUm.css" />
+</head>
+<body>
+    <div class="fundo">
+        <h1 id="titulo">Calculadora - Primeira Versão</h1>
 
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <label for="fname">Valor um:</label>
+            <input type="text" class="campo" id="valorum" name="primeiro" />
+            <br />
 
-<br />
+            <label for="lname">Valor dois:</label>
+            <input type="text" class="campo" id="valordois" name="segundo" />
+            <br />
 
-<h2>Calculadora - Primeira Versão</h2>
-<label for="fname">Valor um:</label>
-<input type="text" id="valorum" name="primeiro" />
-<br />
-<br />
+            <label for="resultado">Resultado:</label>
+            <input value="" type="text" class="campo" id="resultado" />
+            <br />
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="somar()">Somar</button></td>
+                    <td><button class="botao" onclick="subtrair()">Subtrair</button></td>
+                </tr>
 
-<label for="lname">Valor dois:</label>
-<input type="text" id="valordois" name="segundo" />
-<br />
-<br />
+                <tr>
+                    <td><button class="botao" onclick="multiplicar()">Multiplicar</button></td>
+                    <td><button class="botao" onclick="dividir()">Dividir</button></td>
+                </tr>
 
-<label for="resultado">Resultado:</label>
-<input value="" type="text" id="resultado" />
-<br />
+                <tr>
+                    <td><button id="limpar" type="reset" onclick="limpar()">Limpar valores</button></td>
+                </tr>
+            </table>        
+        </div>
 
-<input value="Somar" type="submit" onclick="somar()" />
-<input value="Subtrair" type="submit" onclick="subtrair()" />
-<input value="Multiplicar" type="submit" onclick="multiplicar()" />
-<input value="Dividir" type="submit" onclick="dividir()" />
-<input value="Limpar valores" type="reset" onclick="limpar()" />
+    </div>
+</body>
+</html>
 
 
 
